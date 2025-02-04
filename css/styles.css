@@ -1,0 +1,87 @@
+.header {
+  background: #151515 url("../images/intro-bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.header .text-container {
+  z-index: 5;
+}
+.header .roles {
+  font-family: "lora-regular", serif;
+}
+.header .social {
+  bottom: 50px;
+}
+.header .social i {
+  transition: color 0.4s ease, transform 0.3s ease;
+}
+.header .social i:hover {
+  color: var(--bs-primary) !important;
+  transform: scale(1.1);
+}
+
+.about-img {
+  width: 200px;
+}
+
+.service {
+  background: url("../images/bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.service::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.service .container {
+  z-index: 5;
+}
+
+.portfolio .project {
+  transition: all 0.4s ease-in-out;
+  opacity: 0.8;
+}
+.portfolio .project:hover {
+  transform: scale(1.05);
+}
+
+.contact .form-control:focus {
+  border-bottom: 0;
+}
+
+.footer .icons i:hover {
+  color: var(--bs-primary) !important;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) {
+  .header .social i {
+    font-size: 30px;
+  }
+  .header .roles {
+    font-size: 18px !important;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .start .stat {
+    border-right: 0 !important;
+    margin-bottom: 40px;
+    border-bottom: var(--bs-dark) solid 1px;
+    padding-bottom: 20px;
+  }
+}
