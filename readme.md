@@ -1,6 +1,6 @@
 # Portfolio Website
 
-<img src="./images/screen.png" />
+<img src="./images/Screenshot_1.png" />
 
 # Kullanım
 
